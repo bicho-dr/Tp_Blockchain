@@ -98,4 +98,7 @@ async def main():
         await server.serve_forever()
 
 
-asyncio.run(main())
+try:
+    asyncio.run(main())
+except KeyboardInterrupt:
+    print("\nnode stopped")
